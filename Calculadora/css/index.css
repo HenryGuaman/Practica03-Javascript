@@ -1,0 +1,52 @@
+body {
+    background: linear-gradient(to bottom, 
+    rgb(0, 255, 170), 
+    rgba(0, 109, 135), 
+    rgba(0, 0, 0));
+    background-attachment: fixed;
+}
+caption{
+    color: rgb(240, 255, 251);
+    font-size: 30px;
+}
+
+.calculadora {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    width: 300px;
+    height: 530px;
+    border-radius: 10px;
+}
+
+.calculadora td button {
+    display: block;
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    color: aliceblue;
+    background: rgba(0, 0, 0, .4); 
+}
+
+#resultado {
+    display: block;
+    text-align: right;
+    font-size: 40px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    background: rgba(0, 0, 0, .6);
+    color: aliceblue;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+#cero {
+    display: block;
+    width: 147.5px;
+}
+#igual{
+    height: 144px;
+}
