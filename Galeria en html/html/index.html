@@ -1,65 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-
-	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-	<title>Galeria</title>
-	<meta name="description" content="">
-	<meta name="author" content="satur">
-	<meta name="viewport" content="width=device-width; initial-scale=1.0">
-	
-	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<html>
+	<head>
+		<title>Galeria Fotos</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	</head>
+	<body>
+		<section>
+			<div id="images">
+				<img id="0" class="Presentacion" src="">
+				<img id="1" class="Presentacion" src="">
+				<img id="2" class="Presentacion" src="">
+				<img id="3" class="Presentacion" src="">
+				<img id="4" class="Presentacion" src="">
+			</div>
+			<button id="left" class="button black izquierda" onclick="plusDivs(-1)">Anterior</button>
+			<button id="center" class="button black center" onclick="iniciar()">Iniciar</button>
+			<button id="right" class="button black derecha" onclick="plusDivs(+1)">Siguiente</button>
+		</section>
+	</body>
 	<script type="text/javascript" src="../javascript/index.js"></script>
-</head>
-
-<body >
-	<div class="contenedor">
-		<div class="imagen actual">
-			<img src="../images/1.jpg" />
-			<div class="texto">Naturaleza1</div>
-		</div>
-
-		<div class="imagen">
-			<img src="../images/2.jpg" />
-			<div class="texto">Naturaleza2</div>
-		</div>
-
-		<div class="imagen">
-			<img src="../images/3.jpg ">
-			<div class="texto">Naturaleza3</div>
-		</div>
-
-		<div class="imagen">
-			<img src="../images/4.jpg" />
-			<div class="texto">Naturaleza4</div>
-		</div>
-		<div class="imagen">
-			<img src="../images/5.jpg" />
-			<div class="texto">Naturaleza5</div>
-		</div>
-
-		<a href="#" class="anterior" onclick="anterior();">Anterior</a>
-		<a href="#" class="siguiente" onclick="siguiente();">Siguiente</a>
-
-		<div class="puntos">
-			<span class="punto activo" onclick="mostrar(0);"></span>
-			<span class="punto" onclick="mostrar(1);"></span>
-			<span class="punto" onclick="mostrar(2);"></span>
-			<span class="punto" onclick="mostrar(3);"></span>
-			<span class="punto" onclick="mostrar(4);"></span>
-		</div>
-
-		<div class="boton">
-			<a href="#">
-				<img src="../images/pause.png" id="btn" onclick="playpause();" />
-			</a>
-		</div>
-	</div>
-</body>
-
 </html>
